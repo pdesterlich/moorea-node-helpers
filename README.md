@@ -1,5 +1,7 @@
 # moorea-node-helpers
 
+[![Dependency Status](https://david-dm.org/pdesterlich/moorea-node-helpers.svg?theme=shields.io)](https://david-dm.org/pdesterlich/moorea-node-helpers) [![devDependency Status](https://david-dm.org/pdesterlich/moorea-node-helpers/dev-status.svg?theme=shields.io)](https://david-dm.org/pdesterlich/moorea-node-helpers#info=devDependencies)
+
 a collection of helper functions for node projects
 
 ## Install
