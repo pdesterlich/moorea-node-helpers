@@ -3,47 +3,47 @@
 module.exports = {
 
   /**
-   * verifica se una stringa e' un ObjectID valido per mongodb
-   * @param string stringa da verificare
-   * @returns Boolean true se la stringa e' un ObjectID, false altrimenti
+   * check if a string is a valida mongodb ObjectID
+   * @param   string  string to verify
+   * @returns Boolean true if string is a valid ObjectID, false otherwise
    */
   isObjectID: function(string) {
     return string.match(/^[0-9a-fA-F]{24}$/) !== null;
   },
 
   /**
-   * verifica se una variabile e' un numero
-   * @param n variabile da verificare
-   * @returns Boolean true se la variabile e' un numero, false altrimenti
+   * check if a variable is a number
+   * @param   n       variable to verify
+   * @returns Boolean true if variable is a number, false otherwise
    **/
   isNumber: function(n) {
      return n == parseFloat(n);
   },
 
   /**
-   * verifica se una variabile e' un numero pari
-   * @param n variabile da verificare
-   * @returns Boolean true se la variabile e' un numero pari, false altrimenti
+   * check if a variable is an even number
+   * @param   n       variable to verify
+   * @returns Boolean true if variable is an even number, false otherwise
    **/
   isEven: function(n) {
      return this.isNumber(n) && (n % 2 === 0);
   },
 
   /**
-   * verifica se una variabile e' un numero dispari
-   * @param n variabile da verificare
-   * @returns Boolean true se la variabile e' un numero dispari, false altrimenti
+  * check if a variable is an odd number
+  * @param   n       variable to verify
+  * @returns Boolean true if variable is an odd number, false otherwise
    **/
   isOdd: function(n) {
      return this.isNumber(n) && (Math.abs(n) % 2 == 1);
   },
 
   /**
-   * ritorna un numero intero random compreso tra min e max (inclusi)
-   * @param min limite inferiore del range in cui generare il numero
-   * @param max limite superiore del range in cui generare il numero
-   * @returns int numero random compreso nel range
-   * origine: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+   * return a random integer number between min and max (included)
+   * @param   min lower range limit
+   * @param   max upper range limit
+   * @returns int random integer number
+   * source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
    **/
   getRandomInt: function(min, max) {
     return Math.floor(Math.random() * ((max + 1) - min)) + min;
