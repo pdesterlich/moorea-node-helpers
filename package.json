@@ -1,6 +1,6 @@
 {
   "name": "moorea-node-helpers",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "a collection of helper functions for node projects",
   "main": "index.js",
   "scripts": {
