@@ -10,6 +10,14 @@ a collection of helper functions for node projects
 
 ## API
 
+### prototypes
+
+`Number.isBetween(min, max)`: check if a number is in range (limits included)
+
+`String.isObjectID(string)`: check if a string is a valid mongodb ObjectID
+
+### functions
+
 `isObjectID(string)`: check if a string is a valid mongodb ObjectID
 
 `isNumber(number)`: check if a variable is a number

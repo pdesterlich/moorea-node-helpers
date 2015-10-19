@@ -1,5 +1,23 @@
 'use strict';
 
+/**
+ * check if a number is in range (limits included)
+ * @param   number  min  lower limit
+ * @param   number  max  upper limit
+ * @returns Boolean true if number is in range, false otherwise
+ */
+Number.prototype.isBetween = function (min, max) {
+  return ((this >= min) && (this <= max));
+};
+
+/**
+ * check if a string is a valida mongodb ObjectID
+ * @returns Boolean true if string is a valid ObjectID, false otherwise
+ */
+String.prototype.isObjectID = function() {
+  return this.match(/^[0-9a-fA-F]{24}$/) !== null;
+};
+
 module.exports = {
 
   /**
