@@ -18,6 +18,22 @@ String.prototype.isObjectID = function() {
   return this.match(/^[0-9a-fA-F]{24}$/) !== null;
 };
 
+/**
+ * return the sum of numeric items in the Array
+ * @returns Number sum of numeric items
+ */
+Array.prototype.sum = function () {
+  var result = 0;
+
+  for (var i = 0; i < this.length; i++) {
+    if (this[i] == parseFloat(this[i])) {
+      result += this[i];
+    }
+  }
+
+  return result;
+};
+
 module.exports = {
 
   /**

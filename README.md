@@ -14,7 +14,9 @@ a collection of helper functions for node projects
 
 `Number.isBetween(min, max)`: check if a number is in range (limits included)
 
-`String.isObjectID(string)`: check if a string is a valid mongodb ObjectID
+`String.isObjectID()`: check if a string is a valid mongodb ObjectID
+
+`Array.sum()`: return the sum of numeric items in an array
 
 ### functions
 
