@@ -16,8 +16,6 @@ a collection of helper functions for node projects
 
 `String.isObjectID()`: check if a string is a valid mongodb ObjectID
 
-`Array.sum()`: return the sum of numeric items in an array
-
 ### functions
 
 `isObjectID(string)`: check if a string is a valid mongodb ObjectID
@@ -29,3 +27,5 @@ a collection of helper functions for node projects
 `isOdd(number)`: check if a number is odd
 
 `getRandomInt(min, max)`: returns a random int number between min and max (included)
+
+`arraySumNumbers(array)`: return the sum of numeric items in an array

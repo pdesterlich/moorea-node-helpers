@@ -50,34 +50,6 @@ describe('moorea-node-helpers', function () {
 
     });
 
-    describe('Array.sum', function () {
-
-      it('should return 0 for an empty array', function (done) {
-        var testArray = [];
-        testArray.sum().should.equal(0);
-        done();
-      });
-
-      it('should return 0 for an array with no numeric items', function (done) {
-        var testArray = ['a', 'b', 'c'];
-        testArray.sum().should.equal(0);
-        done();
-      });
-
-      it('should return the correct sum for an array with only numeric items', function (done) {
-        var testArray = [1, 2, 3];
-        testArray.sum().should.equal(6);
-        done();
-      });
-
-      it('should return the correct sum for an array with numeric and non numeric items', function (done) {
-        var testArray = [1, 'a', 2, 'b', 3, 'c', undefined, NaN];
-        testArray.sum().should.equal(6);
-        done();
-      });
-
-    });
-
   });
 
   describe('functions', function () {
@@ -147,6 +119,38 @@ describe('moorea-node-helpers', function () {
         done();
       });
 
+
+    });
+
+    describe('arraySumNumbers', function () {
+
+      it('should return 0 for an empty array', function (done) {
+        var testArray = [];
+        var number = Helpers.arraySumNumbers(testArray);
+        number.should.equal(0);
+        done();
+      });
+
+      it('should return 0 for an array with no numeric items', function (done) {
+        var testArray = ['a', 'b', 'c'];
+        var number = Helpers.arraySumNumbers(testArray);
+        number.should.equal(0);
+        done();
+      });
+
+      it('should return the correct sum for an array with only numeric items', function (done) {
+        var testArray = [1, 2, 3];
+        var number = Helpers.arraySumNumbers(testArray);
+        number.should.equal(6);
+        done();
+      });
+
+      it('should return the correct sum for an array with numeric and non numeric items', function (done) {
+        var testArray = [1, 'a', 2, 'b', 3, 'c', undefined, NaN];
+        var number = Helpers.arraySumNumbers(testArray);
+        number.should.equal(6);
+        done();
+      });
 
     });
 
