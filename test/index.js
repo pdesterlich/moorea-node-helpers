@@ -154,6 +154,24 @@ describe('moorea-node-helpers', function () {
 
     });
 
+    describe('isEmpty', function () {
+
+      it('should return true for an empty object', function (done) {
+        var testObject = {};
+        var result = Helpers.isEmpty(testObject);
+        result.should.equal(true);
+        done();
+      });
+
+      it('should return false for a non empty object', function (done) {
+        var testObject = { a: 1, b: 2 };
+        var result = Helpers.isEmpty(testObject);
+        result.should.equal(false);
+        done();
+      });
+
+    });
+
   });
 
 });

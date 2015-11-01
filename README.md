@@ -29,3 +29,5 @@ a collection of helper functions for node projects
 `getRandomInt(min, max)`: returns a random int number between min and max (included)
 
 `arraySumNumbers(array)`: return the sum of numeric items in an array
+
+`isEmpty(object)`: check if object is empty (has no properties)

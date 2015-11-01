@@ -82,6 +82,16 @@ module.exports = {
     }
 
     return result;
-  }
+  },
 
+  /**
+   * check if an object is empty (has no properties)
+   * @param   o       object to verifiy
+   * @returns Boolean true if object is empty, false otherwise
+   * @credits http://stackoverflow.com/a/4994265
+   */
+  isEmpty: function (o) {
+    return (Object.keys(o).length === 0);
+  }
+  
 };
